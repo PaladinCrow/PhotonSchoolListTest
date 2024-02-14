@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7EF268F6-1EBA-4D42-B788-57AB0357F84A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A71D1E04-93B6-4E54-86F8-968E0F78555C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Photon School App/ViewModels/SchoolsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "downloadData(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A71D1E04-93B6-4E54-86F8-968E0F78555C - b8593bd85b658cb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Photon_School_App.SchoolsViewModel.downloadData(from: Swift.String) async -&gt; ()"
+                  moduleName = "Photon School App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnstanford/Documents/Projects/Testing/Photon%20School%20App/Photon%20School%20App/ViewModels/SchoolsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "A71D1E04-93B6-4E54-86F8-968E0F78555C - caa6b0d1a3870393"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Photon_School_App.SchoolsViewModel.downloadData(from: Swift.String) async -&gt; ()"
+                  moduleName = "Photon School App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnstanford/Documents/Projects/Testing/Photon%20School%20App/Photon%20School%20App/ViewModels/SchoolsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "A71D1E04-93B6-4E54-86F8-968E0F78555C - 76474a59864cc8c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Photon_School_App.SchoolsViewModel.downloadData(from: Swift.String) async -&gt; ()"
+                  moduleName = "Photon School App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnstanford/Documents/Projects/Testing/Photon%20School%20App/Photon%20School%20App/ViewModels/SchoolsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
