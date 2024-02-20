@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Photon_School_AppApp: App {
+    private let themeManager = PhotonSchoolAppThemeManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(themeManager)
         }
     }
 }

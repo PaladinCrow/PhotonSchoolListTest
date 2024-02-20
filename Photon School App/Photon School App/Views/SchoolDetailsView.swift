@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SchoolDetailsView: View {
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var themeManager: PhotonSchoolAppThemeManager
     
     @State var schoolName: String
     @State var schoolInfo: String
@@ -19,26 +20,38 @@ struct SchoolDetailsView: View {
         VStack {
             Text(schoolName)
                 .padding()
+                .background(themeManager.backgroundColor)
+                .foregroundColor(themeManager.textColor)
+                .clipShape(
+                    RoundedRectangle(cornerRadius: themeManager.cornerRadius)
+                )
             Text(schoolInfo)
                 .padding()
+                .background(themeManager.backgroundColor)
+                .foregroundColor(themeManager.textColor)
                 .multilineTextAlignment(.leading)
-            Link(website, destination: URL(string: website)!)
+                .clipShape(
+                    RoundedRectangle(cornerRadius: themeManager.cornerRadius)
+                )
+            Link(website, destination: URL(string: "https://" + website)!)
                 .padding()
+                .background(themeManager.backgroundColor)
+                .clipShape(
+                    RoundedRectangle(cornerRadius: themeManager.cornerRadius)
+                )
             Link(school_email, destination: URL(string: school_email)!)
                 .environment(\.openURL, OpenURLAction { url in
                     print("Open email in specific app")
                     return .handled
                 })
                 .padding()
+                .background(themeManager.backgroundColor)
+                .clipShape(
+                    RoundedRectangle(cornerRadius: themeManager.cornerRadius)
+                )
             Spacer()
         }
+        .padding()
+        .animation(.spring(duration: 1.0), value: themeManager.cornerRadius)
     }
-}
-
-#Preview {
-    SchoolDetailsView(
-        schoolName: "Test Name", 
-        schoolInfo: "This is to test the school information and alignment is properly set",
-        website: "www.google.com",
-        school_email: "www.google.com")///Replace with test email
 }
